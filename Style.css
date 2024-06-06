@@ -1,0 +1,30 @@
+.Titulo{
+    font-size: 50px;
+    color: rgba(124, 134, 88, 0.574);
+    font-weight: bold; 
+    font-style: italic;
+}
+.Subtitulo{
+    font-size: 35px;
+    color: rgb(165, 191, 159);
+    font-weight: 700;
+}
+.Texto{
+    
+    color: rgb(134, 54, 134);
+    font-weight: 700;
+}body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: blanchedalmond;
+
+}
+th{
+    background-color: rgb(176, 147, 226);
+    color: rgb(224, 200, 168);
+    font-size: 25px;
+}
+.img{
+    border-radius: 25px;
+ }
