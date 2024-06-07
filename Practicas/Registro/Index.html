@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica de Validaciones</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="Titulo">Practica de Validaciones</h1>
+        <h2 class="Subtitulo">Formulario de registro</h2><br>
+        
+        <form action="" method="get">
+            <label class="eti" for="nombre">Nombre del empleado</label><br>
+            <input type="text" name="nombre" id="nombre" class="input" placeholder="Nombre" required maxlength="20">
+            <br>
+            <label class="eti" for="App">Apellido Paterno</label><br>
+            <input type="text" name="App" id="App" class="input" placeholder="Apellido Paterno" required maxlength="20">
+            <br>
+            <label class="eti" for="Apm">Apellido Materno</label><br>
+            <input type="text" name="Apm" id="Apm" class="input" 
+            placeholder="Apellido Materno" required maxlength="20">
+            <br>
+            <label class="eti" for="fch">Fecha de Nacimiento</label><br>
+            <input type="date" class="input" required max="2006-01-01">
+            <br>
+            <label class="eti" for="email">Email</label><br>
+            <input type="email" class="input" required="30" placeholder="@">
+            <br>
+            <label class="eti" for="pass">Password</label><br>
+            <input type="password"name="pass" class="input"id="pass" required maxlength ="15" minlength="8" placeholder="Password">
+            <br>
+            <label class="eti" for="pass2">Confirmar Password</label><br>
+            <input type="password" name="pass2" class="input"id="pass2" required maxlength="15" minlength="8" placeholder="Confirmar password">
+        
+            <br><br>
+
+            <input type="submit" class="Boton" onclick="Confirma()">
+        </form>
+
+    </div>
+
+
+    <script src="./main.js"></script>
+    
+</body>
+</html>
