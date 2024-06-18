@@ -12,28 +12,27 @@
         <h2 class="Subtitulo">Formulario de registro</h2><br>
         
         <form action="" method="get">
-            <label class="eti" for="nombre">Nombre del empleado</label><br>
-            <input type="text" name="nombre" id="nombre" class="input" placeholder="Nombre" required maxlength="20">
-            <br>
-            <label class="eti" for="App">Apellido Paterno</label><br>
-            <input type="text" name="App" id="App" class="input" placeholder="Apellido Paterno" required maxlength="20">
-            <br>
-            <label class="eti" for="Apm">Apellido Materno</label><br>
-            <input type="text" name="Apm" id="Apm" class="input" 
-            placeholder="Apellido Materno" required maxlength="20">
-            <br>
-            <label class="eti" for="fch">Fecha de Nacimiento</label><br>
-            <input type="date" class="input" required max="2006-01-01">
-            <br>
-            <label class="eti" for="email">Email</label><br>
-            <input type="email" class="input" required="30" placeholder="@">
+            <label class="eti" for="nombre">Nombre de Usuario</label><br>
+            <input type="text" name="nombre" id="nombre" class="input" pattern="^[a-zA-Z0-9]{5,15}$" title="Debe tener 5 y 15 caracteres alfanumericos" required>
             <br>
             <label class="eti" for="pass">Password</label><br>
-            <input type="password"name="pass" class="input"id="pass" required maxlength ="15" minlength="8" placeholder="Password">
+            <input type="password"name="pass" class="input"id="pass" pattern="(?=.*[a-z])(?=.*[A-Z])(?=.\*d)(?=.*[W_]).{8,}" title="Debe tener al menos 8 caracteres, incluydndo al menos una letra mayuscula, una minuscula, un numero y un caracter especial(!, @, #,etc.)." required>
             <br>
             <label class="eti" for="pass2">Confirmar Password</label><br>
-            <input type="password" name="pass2" class="input"id="pass2" required maxlength="15" minlength="8" placeholder="Confirmar password">
-        
+            <input type="password" name="pass2" class="input"id="pass2" >
+            <br>
+            <label class="eti" for="email">Email</label><br>
+            <input type="email" class="input" title="Debe ser una direccion de correo eleectronico valida" required>
+            <br>
+            <label class="eti" for="telefono">Numero de Telefono</label><br>
+            <input type="tel" class="input" pattern="\+[0-9]{1,15}" title="Debe seguir el formato internacional, comenzando con el signo + y hasta 15 digitos" required>
+            <br>
+            <label class="eti" for="fch">Fecha de Nacimiento</label><br>
+            <input type="date" title="Debe estar en el formato YYY-MM-DD" required>
+            <br>
+            <label class="eti" for="cp">Codigo Postal</label><br>
+            <input type="text" pattern="\d{5}" title="Debe consistir en exactamente 5 digitos" required>
+           
             <br><br>
 
             <input type="submit" class="Boton" onclick="Confirma()">
